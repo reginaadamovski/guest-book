@@ -47,7 +47,7 @@ app.post('/comments', (req, res) => {
 
 //get all comments with name
 app.get('/comments/:name', (req, res) => {
-
+  Comment.find({name:req.params.name},  (err,))
 });
 
 //listen to port 3000
